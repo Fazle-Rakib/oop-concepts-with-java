@@ -35,8 +35,8 @@ public class Identifiers {
         */
 
         int m = 60; // m=> slope, minutes, meter-scale
-        int minutesInHour = 60;
-        int minutes_in_hour = 60;
+        int minutesInHour = 60;  // identifier in camelCase
+        int minutes_in_hour = 60; // identifier in snake_case
 
         // constants
         final int MAX_TEMPERATURE = 100;

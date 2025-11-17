@@ -2,7 +2,7 @@ package java_basics;
 
 public class Conditional {
     public static void main(String[] args) {
-        float result = 74.5F;
+        float result = 79.4F;
         String letterGrade;
         if(result >= 80) {
             letterGrade = "A+";
