@@ -2,15 +2,23 @@ package java_basics;
 
 public class For {
     public static void main(String[] args) {
+        // Basic for loop
 //        for (int i = 0; i < 5; i++) {
 //            System.out.println(i);
 //        }
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                System.out.print(i+","+j +" | ");
-            }
-            System.out.println();
+        // Nested for loop
+//        for (int i = 0; i < 5; i++) {
+//            for (int j = 0; j < 5; j++) {
+//                System.out.print(i+","+j +" | ");
+//            }
+//            System.out.println();
+//        }
+
+
+        // Some for loop variations
+        for (int i = 0, j = 5; i < j; i++, j--) {
+            System.out.println(i + " " + j);
         }
     }
 }
