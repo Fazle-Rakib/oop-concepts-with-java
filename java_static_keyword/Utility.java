@@ -1,11 +1,9 @@
 package java_static_keyword;
-
 class MathUtility {
     static int square(int number) {
         return number * number;
     }
 }
-
 public class Utility {
     public static void main(String[] args) {
         int result = MathUtility.square(5);
