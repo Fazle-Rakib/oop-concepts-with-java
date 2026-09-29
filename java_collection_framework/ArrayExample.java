@@ -23,6 +23,9 @@ public class ArrayExample {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
+        for(int num : numbers) {
+            System.out.println(num);
+        }
     }
 }
 

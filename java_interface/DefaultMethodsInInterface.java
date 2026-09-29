@@ -7,10 +7,19 @@ interface Vehicle1 {
     default void fuelEfficiency() {
         System.out.println("Fuel efficiency: Calculating based on default method.");
     }
+    static void fuelWeight() {
+        System.out.println("Calculating weight!!!");
+    }
+}
+
+interface Chargeable {
+    default void fuelEfficiency() {
+        System.out.println("Fuel efficiency: Calculating based on default method.");
+    }
 }
 
 
-class Car1 implements Vehicle1 {
+class Car1 implements Vehicle1, Chargeable {
     @Override
     public void start() {
         System.out.println("Car is starting...");
@@ -20,6 +29,11 @@ class Car1 implements Vehicle1 {
     public void stop() {
         System.out.println("Car is stopping...");
     }
+
+    public void fuelEfficiency() {
+        System.out.println("Fuel efficiency: Calculating based on default method.");
+    }
+
 }
 
 class Bike1 implements Vehicle1 {
@@ -50,5 +64,10 @@ public class DefaultMethodsInInterface {
         bike.start();
         bike.fuelEfficiency(); // Overrides default method
         bike.stop();
+
+        Vehicle1.fuelWeight();
+
+        Car1 car1 = new Car1();
+//        car1.fuelWeight();
     }
 }
