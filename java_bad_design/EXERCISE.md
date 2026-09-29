@@ -87,10 +87,10 @@ What is the risk of missing one of those places in a larger codebase?
 
 ## Part 3 — Identify the Problems
 
-Each question below points to a specific part of `PayrollSystem.java`.
-Fill in the blank with the correct OOP term or principle.
+Each question below points to a specific part of `PayrollSystem.java`, or to something that is
+**missing** from it. Fill in the blank with the correct OOP term or principle.
 
-1. Lines 15–19 store all employee data in four separate arrays instead of grouping related data into a single __________.
+1. The fields `employeeNames[]`, `employeeTypes[]`, `rateOrSalary[]`, and `workUnits[]` are four separate arrays that together describe one employee. An OOP design would group all of these fields into a single __________.
 
 2. Fields like `employeeNames`, `employeeCount`, and `rateOrSalary` are declared `public static`, which means any other class can modify them without restriction. This is a violation of __________.
 
