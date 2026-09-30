@@ -16,14 +16,12 @@ class NumberStack<T extends Number> {
 
     void push(T value)  { items[++top] = value; }
 
-    @SuppressWarnings("unchecked")
     T pop()             { return (T) items[top--]; }
 
     boolean isEmpty()   { return top == -1; }
     int size()          { return top + 1; }
 
     // sum() works because T extends Number, which provides doubleValue()
-    @SuppressWarnings("unchecked")
     double sum() {
         double total = 0;
         for (int i = 0; i <= top; i++) {
@@ -38,7 +36,6 @@ class NumberStack<T extends Number> {
     }
 
     // max() compares using doubleValue() — no need for Comparable
-    @SuppressWarnings("unchecked")
     T max() {
         T maxVal = (T) items[0];
         for (int i = 1; i <= top; i++) {

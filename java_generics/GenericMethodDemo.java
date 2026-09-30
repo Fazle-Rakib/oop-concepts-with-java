@@ -15,10 +15,8 @@ class Stack3<T> {
 
     void push(T value)    { items[++top] = value; }
 
-    @SuppressWarnings("unchecked")
     T pop()               { return (T) items[top--]; }
 
-    @SuppressWarnings("unchecked")
     T peek()              { return (T) items[top]; }
 
     boolean isEmpty()     { return top == -1; }

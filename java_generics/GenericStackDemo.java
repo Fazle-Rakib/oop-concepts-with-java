@@ -19,13 +19,10 @@ class Stack<T> {
         items[++top] = value;
     }
 
-    // @SuppressWarnings: safe — only T values are ever placed into this array
-    @SuppressWarnings("unchecked")
     T pop() {
         return (T) items[top--];
     }
 
-    @SuppressWarnings("unchecked")
     T peek() {
         return (T) items[top];
     }
